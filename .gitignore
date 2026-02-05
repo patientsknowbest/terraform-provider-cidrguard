@@ -1,0 +1,6 @@
+.idea
+.terraform
+terraform-cidr-datasource.iml
+**/terraform.tfstate*
+**/.terraform.lock.hcl
+terraform-provider-cidr-guard

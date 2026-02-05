@@ -1,0 +1,17 @@
+# This is a configuration file for the Terraform CLI.
+# It tells Terraform how to find and install providers.
+
+provider_installation {
+  # The dev_overrides block is used for local provider development.
+  # It overrides the normal installation process for a specific provider.
+  dev_overrides {
+    # The key is the provider's official source address.
+    # The value is the absolute path to the directory containing the
+    # compiled provider binary.
+    "adacasolutions/cidr-guard" = "/Users/utamas/.terraform.d/plugins/adacasolutions/cidr-guard/1.0.0/darwin_arm64/"
+  }
+
+  # For all other providers (like hashicorp/aws, etc.), install them
+  # directly from their origin registries as normal.
+  direct {}
+}
